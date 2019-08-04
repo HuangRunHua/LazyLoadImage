@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		048747AC22DAD42D006176BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048747AB22DAD42D006176BC /* AppDelegate.swift */; };
-		048747AE22DAD42D006176BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048747AD22DAD42D006176BC /* ViewController.swift */; };
 		048747B122DAD42D006176BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048747AF22DAD42D006176BC /* Main.storyboard */; };
 		048747B322DAD42E006176BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048747B222DAD42E006176BC /* Assets.xcassets */; };
 		048747B622DAD42E006176BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048747B422DAD42E006176BC /* LaunchScreen.storyboard */; };
+		048747BE22DAD470006176BC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048747BD22DAD470006176BC /* TableViewController.swift */; };
+		048747C022DAD47D006176BC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048747BF22DAD47D006176BC /* TableViewCell.swift */; };
+		048747C222DAD485006176BC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048747C122DAD485006176BC /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		048747A822DAD42D006176BC /* LazyLoadImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyLoadImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		048747AB22DAD42D006176BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		048747AD22DAD42D006176BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		048747B022DAD42D006176BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		048747B222DAD42E006176BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		048747B522DAD42E006176BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		048747B722DAD42E006176BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		048747BD22DAD470006176BC /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		048747BF22DAD47D006176BC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		048747C122DAD485006176BC /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +58,10 @@
 		048747AA22DAD42D006176BC /* LazyLoadImage */ = {
 			isa = PBXGroup;
 			children = (
+				048747BD22DAD470006176BC /* TableViewController.swift */,
+				048747BF22DAD47D006176BC /* TableViewCell.swift */,
+				048747C122DAD485006176BC /* Data.swift */,
 				048747AB22DAD42D006176BC /* AppDelegate.swift */,
-				048747AD22DAD42D006176BC /* ViewController.swift */,
 				048747AF22DAD42D006176BC /* Main.storyboard */,
 				048747B222DAD42E006176BC /* Assets.xcassets */,
 				048747B422DAD42E006176BC /* LaunchScreen.storyboard */,
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				048747AE22DAD42D006176BC /* ViewController.swift in Sources */,
+				048747C022DAD47D006176BC /* TableViewCell.swift in Sources */,
 				048747AC22DAD42D006176BC /* AppDelegate.swift in Sources */,
+				048747BE22DAD470006176BC /* TableViewController.swift in Sources */,
+				048747C222DAD485006176BC /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YRB62S584T;
 				INFOPLIST_FILE = LazyLoadImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YRB62S584T;
 				INFOPLIST_FILE = LazyLoadImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
